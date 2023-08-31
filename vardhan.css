@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    padding: 2rem;
+    font-family: 'Segoe UI', sans-serif;
+    background-image: linear-gradient(green,yellow);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.toolbox {
+    display: flex;
+    gap: 20px;
+    height: 85vh;
+}
+
+.input-section {
+    flex: 1;
+    padding: 20px;
+    border-radius: 8px;
+    background-image:radial-gradient(white,rgb(5, 186, 231));
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.field-group {
+    margin-bottom: 20px;
+}
+
+.field-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.field-group textarea {
+    width: 100%;
+    min-height: 120px; 
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.content-wrapper {
+    flex: 4; 
+    padding-left: 1rem;
+    overflow-y: auto;
+    border-left: 1px solid #ccc; 
+}
+
+.content-grid {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    padding: 10px;
+}
+
+.content-box {
+    padding: 20px; 
+    background: #FFF;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.content-box h2 {
+    font-size: 1.5rem; 
+}
+
+.content-box img, .content-box video {
+    width: 100%;
+    max-height: AUTO; 
+    display: block;
+    margin-top: 10px;
+}
+
+.content-wrapper {
+    flex: 4;
+    padding-left: 1rem;
+    overflow-y: auto;
+    border-left: 1px solid #ccc;
+    height: 90vh; /* Add this to give it more vertical space */
+}
+
+.content-grid {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(1000px, 1fr)); /* Increase this from 300px to 400px for a larger column size */
+    padding: 10px;
+}
+
+.content-box {
+    padding: 30px; /* Increase this from 20px to 30px for more padding */
+    background: #FFF;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+

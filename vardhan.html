@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="vardhan.css">
+    <title>Content Organizer</title>
+</head>
+
+<body>
+    <header>
+        <h1><u>Content Organizer</u></h1>
+    </header>
+
+    <main class="toolbox">
+        <aside class="input-section">
+            <form id="contentForm">
+                <div class="field-group">
+                    <label for="head">Headline:</label>
+                    <input type="text" id="head" placeholder="Enter headline">
+                </div>
+                <div class="field-group">
+                    <label for="body">Body:</label>
+                    <textarea id="body" placeholder="Enter content"></textarea>
+                </div>
+                <div class="field-group">
+                    <label for="pic">Picture:</label>
+                    <input type="file" id="pic" accept="image/*">
+                </div>
+                <div class="field-group">
+                    <label for="clip">Clip:</label>
+                    <input type="file" id="clip" accept="video/*">
+                </div>
+                <div class="field-group">
+                    <input type="button" value="Add Content" onclick="addContent()">
+                </div>
+            </form>
+        </aside>
+        <div class="content-wrapper">
+            <section id="contentShowcase" class="content-grid"></section>
+        </div>
+    </main>
+
+    <script src="vardhan.js"></script>
+</body>
+
+</html>
